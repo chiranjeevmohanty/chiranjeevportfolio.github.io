@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+/* font-family: 'Vidaloka', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;700&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* font-family: 'Monoton', cursive */
+/* styling for head section */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+:root {
+    --navbarcr: black;
+    --butfontfamily: 'Barlow Condensed', sans-serif;
+    --navfontfamily: corbel;
+    --primarycolor: #9600ff;
+    --headfontfamily: 'Vidaloka', serif;
+}
+
+.fullpage-animation {
+    height: 100vh;
+    width: 100%;
+    background-color: #0c0018;
+    position: absolute;
+    z-index: 14;
+    animation: slide 500ms linear 5s 1 forwards;
+    transform-origin: center;
+}
+
+@keyframes slide {
+    to {
+        transform: scaleY(0);
+    }
+}
+
+/* svg animation */
+
+#layer_1 {
+    transform: scale(0.2);
+    position: absolute;
+    top: -90%;
+    z-index: 15;
+}
+
+#layer_1 path {
+    fill: white;
+}
+
+#layer_1 .cls-1,
+#layer_1 .cls-2,
+#layer_1 .cls-3,
+#layer_1 .cls-4,
+#layer_1 .cls-5,
+#layer_1 .cls-6,
+#layer_1 .cls-7,
+#layer_1 .cls-8,
+#layer_1 .cls-9,
+#layer_1 .cls-10,
+#layer_1 .cls-11,
+#layer_1 .cls-12,
+#layer_1 .cls-13 {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-miterlimit: 10;
+    stroke-width: .5px;
+}
+
+#layer_1 .cls-1 {
+    stroke-dasharray: 2989;
+    stroke-dashoffset: 2989;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-2 {
+    stroke-dasharray: 3443;
+    stroke-dashoffset: 3443;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-3 {
+    stroke-dasharray: 2979;
+    stroke-dashoffset: 2979;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-4 {
+    stroke-dasharray: 1278;
+    stroke-dashoffset: 1278;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-5 {
+    stroke-dasharray: 153;
+    stroke-dashoffset: 153;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-6 {
+    stroke-dasharray: 143;
+    stroke-dashoffset: 143;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-7 {
+    stroke-dasharray: 223;
+    stroke-dashoffset: 223;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-8 {
+    stroke-dasharray: 223;
+    stroke-dashoffset: 223;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-9 {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-10 {
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-11 {
+    stroke-dasharray: 281;
+    stroke-dashoffset: 281;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-12 {
+    stroke-dasharray: 143;
+    stroke-dashoffset: 143;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+#layer_1 .cls-13 {
+    stroke-dasharray: 153;
+    stroke-dashoffset: 153;
+    animation: anime-1 6s linear 1 alternate forwards;
+}
+
+.head-svg {
+    transform: scale(0.5);
+    transform-origin: top left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+
+@keyframes anime-1 {
+    to{
+        stroke-dashoffset: 0;
+        fill: white;
+        opacity: 0;
+    }
+ 
+}
+
+
+
+/* svg animation ends here */
+
+
+
+.animate-shape1 {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(45deg, #c32ed1, #5ffae0);
+    filter: opacity(0.3);
+    top: 40%;
+    left: 33%;
+    z-index: -1;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.animate-shape2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(45deg, #c32ed1, #5ffae0);
+    filter: opacity(0.3);
+    top: 30%;
+    left: 15%;
+    z-index: -1;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes movement {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(20px, 0);
+    }
+
+    50% {
+        transform: translate(20px, 20px) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+
+#navbarNav ul li a::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 2px;
+    background-color: #9600ff;
+    transition: all 500ms linear;
+}
+
+#navbarNav ul li a:focus::after {
+    transform: scaleX(1);
+
+}
+
+.nav-holder {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(25px);
+    z-index: 10;
+}
+
+#navbarNav ul li a:focus {
+    color: black;
+}
+
+#navbarNav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+#navbarNav ul li a:hover {
+    color: black;
+}
+
+
+.logo {
+    width: 72px;
+    position: relative;
+}
+
+.navbar-itoms {
+    width: 50%;
+    justify-content: space-between;
+}
+
+.menu-but {
+    color: var(--primarycolor);
+}
+
+.navbar-itoms li a {
+    text-decoration: none;
+    font-family: var(--navfontfamily);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--navbarcolor);
+    text-transform: capitalize;
+}
+
+.header-holder {
+    min-height: 800px;
+}
+
+.custom-spacing {
+    padding: 100px 0;
+}
+
+.head-content h1 {
+    font-family: var(--headfontfamily);
+    font-size: 50px;
+    color: #38034c;
+}
+
+.head-but {
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--butfontfamily);
+    font-size: 20px;
+    padding: 7px 50px 9px 50px;
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    color: white;   
+    background: linear-gradient(90deg, #9600ff, #aebaf8);
+    transition: all 400ms linear;
+}
+
+.head-but>span {
+    position: relative;
+    transition: all 400ms linear;
+}
+
+.head-but:hover {
+    background: linear-gradient(90deg, #aebaf8, #9600ff, #aebaf8);
+    color: white;
+    transform: scale(1.1);
+}
+
+.head-but:hover>span {
+    left: 10px;
+}
+
+.logo-holder a img {
+    width: 100%;
+}
+
+.banner-holder img {
+    width: 100%;
+}
+
+.head-icon a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 8px;
+    background-color: rgba(0, 0, 0, 0.300);
+    color: white;
+    margin: 15px 7px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all 300ms linear; 
+}
+.head-icon a:hover{
+    background-color: black;
+}
+
+/* stylings for about me section */
+.about-head h1 {
+    font-size: 43px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.about-head h1::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 4px;
+    background-color: var(--primarycolor);
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+.about-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #8f9ec6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content h2 {
+    font-family: var(--butfontfamily);
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    color: #020680;
+}
+
+.about-content h2 span {
+    font-weight: 500;
+}
+
+.sub-section p {
+    font-size: 17px;
+}
+
+.sub-section {
+    width: 80%;
+    margin-left: 40px;
+}
+
+.sub-section p span {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* styling for line art */
+
+#line-art-1 {
+    display: block;
+}
+
+#line-art-1 .line {
+    width: 3px;
+    height: 0;
+    top: 150px;
+    left: 22px;
+    position: absolute;
+    background-color: var(--primarycolor);
+    transition: all 1500ms linear;
+}
+
+#line-art-1 .circle1,
+#line-art-1 .circle2,
+#line-art-1 .circle3 {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid var(--primarycolor);
+    transition: all 1s linear;
+}
+
+#line-art-1 .circle1 {
+    top: 184px;
+}
+
+#line-art-1 .circle2 {
+    top: 283px;
+}
+
+#line-art-1 .circle3 {
+    top: 380px;
+}
+
+#line-art-2 .line {
+    width: 3px;
+    height: 65%;
+    top: 150px;
+    left: 22px;
+    position: absolute;
+    background-color: var(--primarycolor);
+    transition: all 1500ms linear;
+}
+
+#line-art-2 .circle1,
+#line-art-2 .circle2,
+#line-art-2 .circle3 {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid var(--primarycolor);
+    transition: all 1s linear;
+}
+
+#line-art-2 .circle1 {
+    top: 184px;
+}
+
+#line-art-2 .circle2 {
+    top: 307px;
+}
+
+#line-art-2 .circle3 {
+    top: 432px;
+}
+
+#line-art-3 .line {
+    width: 3px;
+    height: 75%;
+    top: 150px;
+    left: 22px;
+    position: absolute;
+    background-color: var(--primarycolor);
+    transition: all 1500ms linear;
+}
+
+#line-art-3 .circle1,
+#line-art-3 .circle2 {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid var(--primarycolor);
+    transition: all 1s linear;
+}
+
+#line-art-3 .circle1 {
+    top: 184px;
+}
+
+#line-art-3 .circle2 {
+    top: 363px;
+}
+
+.sub-section {
+    position: relative;
+}
+
+.sub-animation {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    transition: all 1s linear;
+    transform-origin: right;
+}
+
+.my-works-holder {
+    background-color: #e9ecf2;
+}
+
+#ui-carousel .owl-nav button.owl-prev,
+#illustration-carousel .owl-nav button.owl-prev,
+#iso-carousel .owl-nav button.owl-prev,
+#magzine-carousel .owl-nav button.owl-prev {
+    color: var(--primarycolor);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 70px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 10px #8f9ec6;
+}
+
+#ui-carousel .owl-nav button.owl-prev span,
+#illustration-carousel .owl-nav button.owl-prev span,
+#iso-carousel .owl-nav button.owl-prev span,
+#magzine-carousel .owl-nav button.owl-prev span {
+    position: relative;
+    top: -9px;
+}
+
+#ui-carousel .owl-nav button.owl-next,
+#illustration-carousel .owl-nav button.owl-next,
+#iso-carousel .owl-nav button.owl-next,
+#magzine-carousel .owl-nav button.owl-next {
+    color: var(--primarycolor);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 70px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 10px #8f9ec6;
+}
+
+#ui-carousel .owl-nav button.owl-next span,
+#illustration-carousel .owl-nav button.owl-next span,
+#iso-carousel .owl-nav button.owl-next span,
+#magzine-carousel .owl-nav button.owl-next span {
+    position: relative;
+    top: -9px;
+}
+
+.print-holder img,
+#ui-carousel a img,
+#illustration-carousel a img,
+#iso-carousel a img,
+.logo-holder img,
+.banner-holder img,
+#magzine-carousel a img,
+.template-holder img{
+    width: 100%;
+    transition: all 300ms linear;
+}
+
+.print-holder a:hover img,
+#ui-carousel a:hover img,
+#illustration-carousel a:hover img,
+#iso-carousel a:hover img,
+.logo-holder a:hover img,
+.banner-holder a:hover img,
+#magzine-carousel a:hover img,
+.template-holder a:hover img{
+    transform: scale(1.03);
+}
+
+/* stylings for footer */
+.footer-holder{
+    background-color:  #9500ff25;
+    padding: 80px 0;
+}
+
+.footer-content h4{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    padding: 7px 10px;
+    margin: 0 7px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    transition: all 300ms linear;
+}
+
+.footer-content a:hover{
+      color: var(--primarycolor);
+}
+
+.copyright{
+    font-size: 15px;
+    color: black;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.footer-content{
+    text-align: end;
+}
+
+
+
+/* stylings for mobile screens */
+@media only screen and (max-width: 576px) {
+
+    #nav-indicators {
+        padding-left: 60px;
+    }
+
+    #layer_1 {
+        transform: scale(0.5);
+        position: absolute;
+        top: 10%;
+        z-index: 2;
+    }
+
+    .head-svg {
+        transform: scale(0.7);
+        transform-origin: top left;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+    }
+
+    .animate-shape1 {
+        height: 100px;
+        width: 100px;
+        top: 15%;
+        left: 75%;
+    }
+
+    .animate-shape2 {
+        height: 40px;
+        width: 40px;
+        top: 11%;
+        left: 20%;
+    }
+
+    .head-content h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    .head-but {
+        margin: 40px;
+        transform: scale(1.2);
+    }
+
+    .head-but:hover {
+        background: linear-gradient(90deg, #aebaf8, #9600ff, #aebaf8);
+        color: white;
+        transform: scale(1.3);
+    }
+
+    .head-content {
+        text-align: center;
+    }
+
+    /* styling for about me */
+
+    .about-head h1 {
+        font-size: 35px;
+    }
+
+    .profile-img {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .about-text {
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    /* stylings for line art */
+
+    #line-art-1 .circle1,
+    #line-art-1 .circle2,
+    #line-art-1 .circle3 {
+        left: 25px;
+    }
+
+    #line-art-1 .line {
+        left: 35px;
+    }
+
+    .sub-section {
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    #line-art-2 .circle1,
+    #line-art-2 .circle2,
+    #line-art-2 .circle3 {
+        left: 25px;
+    }
+
+    #line-art-2 .line {
+        left: 35px;
+    }
+
+    #line-art-3 .circle1,
+    #line-art-3 .circle2,
+    #line-art-3 .circle3 {
+        left: 25px;
+    }
+
+    #line-art-3 .line {
+        left: 35px;
+    }
+
+    .footer-content{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer-content a{
+        margin-top: 30px;
+        display: inline-block;
+    } 
+
+    .header-holder{
+        flex-direction: column-reverse;
+    }
+    .head-icon a{ 
+        font-size: 20px;
+        padding: 15px; 
+    }
+}
